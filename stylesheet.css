@@ -1,37 +1,52 @@
-.product{
-  background-color: blue;
-  color: plum;
-  width: 300px;
-  padding: 10px;
-  margin: 5px;
+.avatar{
+width: 5rem;
+height: 5rem;
+background-color: #0000ff;
+float:left;
+margin-right: 0.5rem;
 }
-div h1{
-  text-decoration:underline ;
+.tweet{
+  border: 3px solid lightgreen;
 }
-#shop {
+.clear{
+  clear: both;
+}
+p{
+  font-size: large;
+}
+.container1{
+  border: 3px solid lightseagreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30vh;
+  
+}
+.box{
+ width:5rem;
+  height:5rem;
   background-color: gold;
-  width: 300px;
-  padding: 10px;
-  margin: 5px;
-  text-decoration: dashed;
+  margin: 1rem;
 }
-body{
-  margin: 10px;
-  font-size: 140%;
-  font-style: italic;
-  font-weight: bold;
+.container{
+  display: grid;
+  grid-template: 100px auto 100px / 30fr 70fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar  main"
+  "footer  footer";
+   height: 50vh;
+   gap: 10px;
 }
-ul li:nth-child(odd){
-  color: deeppink;
+.box1{
+  width:5rem;
+  height:5rem;
+  background-color: darkslateblue;
 }
-a:visited,a:link{
-  color: brown;
+.big-boxA{
+  grid-area: "header";
 }
-a:hover,
-a:focus{
-  color:green;
-}
-.first-letter{
-  font-size: 140%;
-  font-weight: bold;
+.bog-boxD{
+  grid-area: "footer";
 }
