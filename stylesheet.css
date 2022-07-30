@@ -1,52 +1,37 @@
-.avatar{
-width: 5rem;
-height: 5rem;
-background-color: #0000ff;
-float:left;
-margin-right: 0.5rem;
-}
-.tweet{
-  border: 3px solid lightgreen;
-}
-.clear{
-  clear: both;
-}
-p{
-  font-size: large;
-}
-.container1{
-  border: 3px solid lightseagreen;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  height: 30vh;
-  
-}
-.box{
- width:5rem;
-  height:5rem;
-  background-color: gold;
-  margin: 1rem;
+body{
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 .container{
-  display: grid;
-  grid-template: 100px auto 100px / 30fr 70fr;
-  grid-template-areas: 
-  "header header"
-  "sidebar  main"
-  "footer  footer";
-   height: 50vh;
-   gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.box1{
-  width:5rem;
-  height:5rem;
-  background-color: darkslateblue;
+.box{
+  background: green;
+  padding :1rem;
 }
-.big-boxA{
-  grid-area: "header";
+.box:nth-of-type(2){
+  background: blue;
 }
-.bog-boxD{
-  grid-area: "footer";
+@media screen and (min-width: 600px){
+  .container{
+flex-direction: row;
+  }
+}
+h1{
+  font-family: GungsuhChe;
+  color: blueviolet;
+  margin: 3rem 0 1rem;
+  letter-spacing: -1px;
+}  
+p1{
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1rem;
+  color:#333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 50ch;
 }
