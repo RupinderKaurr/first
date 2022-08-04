@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+  />
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+      <input type="date" />
+      <h2>Address bar</h2>
+      <textarea name="Address" cols="30" rows="10"></textarea>
+      <br />
+      <h2>Choose Countries</h2>
+      <input type="text" list="countries" />
+      <datalist id="countries">
+        <option>India</option>
+        <option>Australia</option>
+        <option>Usa</option>
+        <option>America</option>
+      </datalist>
+      <select>
+        <optgroup label="Front End Courses">
+          <option value="1">Html</option>
+          <option value="2">Css</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back End Courses">
+          <option value="1">Python</option>
+          <option value="2">Node.Js</option>
+          <option value="3">Php</option>
+        </optgroup>
+      </select>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="fron-end">Front-End</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" />
+        <label class="label-inline" for="back-end">Back-End</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="Silver" />
+        <label for="silver" class="label-inline">Silver</label>
+        <input type="radio" name="membership" id="Gold" />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+      <input type="range" min="0" max="100" value="90" />
+      <input type="file" />
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <input type="text" required />
+      <button type="submit">Register</button>
+      <button type="reset">clear</button>
+    </form>
+    <img
+      src="https://tse3.mm.bing.net/th?id=OIP.ocnMJoHvwcgSs2acz2fcVAHaEK&pid=Api&P=0"
+      alt=""
+      class="meal"
+    />
+  </body>
+</html>
