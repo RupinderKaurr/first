@@ -1,31 +1,58 @@
-.grid-container {
-  display: grid;
-  grid: 90px / auto auto auto;
-  grid-gap: 10px;
-  background-color: #4b7394;
-  padding: 10px;
+* {
+box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
 }
 
-.grid-container > div {
-  background-color: rgb(252, 168, 168);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.flex-box1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
 }
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
+.flex-box2 {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-box1, .flex-box2 {
+    flex: 100%;
+    }
   }
-  .grid img {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    max-width: 100%;
+  .flowers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 50vh;
   }
-  h1{
-    text-decoration: underline;
-    font-style: italic;
-    text-decoration-color: darkmagenta;
-    font-weight: bold;
+  .flowers img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    width: 10vw;
+    height: 5vw;
+  }
+  .flex-container1{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    }
+  .item{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+    }
+  #item-4{
+    flex-grow: 2;
   }
