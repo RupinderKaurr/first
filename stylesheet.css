@@ -1,58 +1,87 @@
-* {
-box-sizing: border-box;
+.container{
+  background-color: pink;
+  height:700px;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: repeat(3, 1fr);
+row-gap: 30px;
+column-gap: 10px;
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
+.item{
+  background-color: grey;
+  border-radius: 4px;
+}
+.item-1{
+grid-row-start: 1;
+grid-row-end: 6;
+}
+.item-2{
+grid-column-start: 2;
+grid-column-end: 4;
+background-color: grey;
+}
+.item-3{
+  grid-column-start: 2;
+grid-column-end: 4;
+background-color: grey;
+}
+.item-4{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: grey;
+}
+.image-1{
+  height: 240px;
+  width:200px;
+border-radius: 50%;
+margin:5rem 3rem;
+}
+h2{
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 2px;
+}
+.para-1{
+  margin: 3px;
+  padding:3px;
+  }
+.image-2{
+  height: 100px;
+  width: 150px;
+  border-radius: 50%;
+  padding:0px;
+  float: right;
+  margin:4px;
+}
+.para-2{
   text-align: center;
 }
+  .image-3{
+    height:100px;
+    width:150px;
+    border-radius: 50%;
+    float: right;
+  margin:4px;
+  padding:0px;
+  }
+  .para-3{
+    text-align: center;
+  }
+  .avatar{
+    height:100px;
+    width:150px;
+    border-radius: 50%;
+    float: right;
+  margin:4px;
+  padding:0px;
+  }
+  .para-4{
+    text-align: center;
+  }
 
-.flex-box1 {
-  background-color: #f1f1f1;
-  padding: 10px;
-  flex: 50%;
-}
-.flex-box2 {
-  background-color: dodgerblue;
-  padding: 10px;
-  flex: 50%;
-}
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-box1, .flex-box2 {
-    flex: 100%;
-    }
-  }
-  .flowers {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    max-height: 50vh;
-  }
-  .flowers img {
-    margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    width: 10vw;
-    height: 5vw;
-  }
-  .flex-container1{
-    height: 500px;
-    width: 100%;
-    border: 2px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    }
-  .item{
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    border: 2px solid green;
-    margin: 10px;
-    padding: 3px;
-    }
-  #item-4{
-    flex-grow: 2;
-  }
+
+
+
